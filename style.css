@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth; /* دي اللي بتعمل حركة الزحلقة الناعمة */
+    scroll-padding-top: 80px; /* عشان لما تدوس على لينك، العناوين متستخباش تحت الـ Navbar الثابت */
+}
 /* 1. Base Styles & Typography */
 body { 
     font-family: 'Poppins', sans-serif; 
