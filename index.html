@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights Masters | Reliable Market Research</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-navy': '#0b1d3a',
+                        'brand-gold': '#c5a059', // Golden color from logo text
+                        'brand-blue': '#1e3a8a', // Deep blue from logo magnifier
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300 overflow-x-hidden">
+
+    <div id="loader" class="fixed inset-0 z-[100] bg-white dark:bg-slate-950 flex items-center justify-center">
+        <div class="w-16 h-16 border-4 border-slate-200 border-t-brand-blue rounded-full animate-spin"></div>
+    </div>
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 py-6 bg-white/90 dark:bg-slate-950/90 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="logo font-black text-2xl tracking-tighter text-brand-navy dark:text-white uppercase transition-opacity" id="nav-logo-text">
+                INSIGHTS <span class="text-brand-blue dark:text-blue-400">MASTERS</span>
+            </div>
+            <div class="flex items-center space-x-6">
+                <ul class="hidden lg:flex space-x-8 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-700 dark:text-slate-300 transition-colors duration-500" id="nav-links">
+                    <li><a href="#page1" class="hover:text-brand-gold transition">Home</a></li>
+                    <li><a href="#page2" class="hover:text-brand-gold transition">Who We Are</a></li>
+                    <li><a href="#page3" class="hover:text-brand-gold transition">What We Do</a></li>
+                    <li><a href="#page5" class="hover:text-brand-gold transition">Our People</a></li>
+                    <li><a href="#page7" class="bg-brand-blue text-white px-6 py-2 rounded-full hover:bg-brand-navy transition">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-brand-gold hover:ring-2 ring-brand-blue transition-all">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:block"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="page1" class="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-white dark:bg-slate-950">
+        <div class="reveal max-w-4xl animate__animated animate__fadeIn">
+            <img src="imgs/logo.jpeg" alt="Insights Masters - Research Solutions, Trusted Results" class="w-full h-auto mx-auto mb-16 dark:brightness-110 drop-shadow-lg">
+            <div class="space-y-4">
+                <h1 class="text-5xl lg:text-7xl font-black text-brand-navy dark:text-white leading-tight uppercase">Insights Masters</h1>
+                <p class="text-xl font-bold tracking-[0.3em] text-brand-blue dark:text-blue-400 uppercase">Reliable Fieldwork For Market Research</p>
+                <p class="text-sm text-slate-400 dark:text-slate-500 uppercase tracking-[0.5em] font-light italic">From Recruitment To Real Insights</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="page2" class="py-32 bg-slate-50 dark:bg-slate-900 border-y border-slate-100 dark:border-slate-800">
+        <div class="container mx-auto px-6 max-w-5xl text-center">
+            <div class="reveal mb-16">
+                <h3 class="text-brand-gold font-bold tracking-widest text-sm uppercase">Research Solutions, Trusted Results italic leading-tight</h3>
+                <h2 class="text-5xl font-black text-brand-navy dark:text-white italic uppercase">Who We Are?</h2>
+                <div class="w-24 h-1 bg-brand-blue mx-auto mt-6 rounded-full"></div>
+            </div>
+            <div class="reveal space-y-6 text-xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-3xl mx-auto">
+                <p> Insights Masters is a market research fieldwork and recruitment agency delivering reliable, high-quality execution across the MENA region.</p>
+                <p> We support research agencies and organizations with efficient participant sourcing, fieldwork management, and end-to-end project support across multiple industries.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="page3" class="py-32 bg-white dark:bg-slate-950">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20 reveal">
+                <h2 class="text-5xl font-black text-brand-navy dark:text-white italic uppercase">What We Do?</h2>
+                <div class="h-1 w-32 bg-brand-gold mx-auto mt-6 rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 mb-24 reveal">
+                <div class="icon-box-enhanced"><i class="fas fa-user-secret"></i><p>Mystery Shopper</p></div>
+                <div class="icon-box-enhanced"><i class="fas fa-users"></i><p>Participant Sourcing</p></div>
+                <div class="icon-box-enhanced"><i class="fas fa-file-contract"></i><p>Audit</p></div>
+                <div class="icon-box-enhanced"><i class="fas fa-user-check"></i><p>Audience Recruitment</p></div>
+                <div class="icon-box-enhanced"><i class="fas fa-language"></i><p>Translation</p></div>
+                <div class="icon-box-enhanced"><i class="fas fa-lightbulb"></i><p>Consulting</p></div>
+                <div class="icon-box-enhanced"><i class="fas fa-map-marked-alt"></i><p>Site Preparation</p></div>
+                <div class="icon-box-enhanced"><i class="fas fa-microphone-lines"></i><p>Transcription</p></div>
+            </div>
+
+            <div class="text-center mb-10 reveal">
+                <span class="bg-brand-navy dark:bg-brand-navy/50 text-white px-6 py-2 rounded-full font-bold text-sm uppercase tracking-tighter shadow-lg">Full-Service Quantitative & Qualitative Research</span>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto reveal mb-16">
+                <div class="service-pill-enhanced">Fieldwork Operations & Logistics</div>
+                <div class="service-pill-enhanced">Facility Management & Site Setup</div>
+                <div class="service-pill-enhanced">Mystery Shopping & CX Evaluation</div>
+                <div class="service-pill-enhanced">Transcription & Translation Services</div>
+                <div class="service-pill-enhanced">Participant Recruitment & Management</div>
+                <div class="service-pill-enhanced">Moderation & Fieldwork Execution</div>
+            </div>
+
+            <div class="max-w-4xl mx-auto text-center bg-white dark:bg-slate-900 p-10 rounded-3xl shadow-xl border-t-8 border-brand-navy dark:border-brand-blue reveal">
+                <p class="italic text-slate-700 dark:text-slate-300 font-medium leading-relaxed">
+                    We execute research across all methodologies (IDIs, FGDs, F2F, CLTs), acting as a strong local fieldwork partner. With targeted recruitment (B2B/B2C) and a scalable team, we ensure smooth execution and deliver clear, reliable results with full transparency.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="grid lg:grid-cols-2 gap-12 mb-20">
+                <div class="reveal p-10 border-2 border-brand-gold rounded-[30px] bg-white dark:bg-slate-800">
+                    <h3 class="text-3xl font-black text-brand-navy dark:text-blue-400 mb-6 italic uppercase">Our Vision</h3>
+                    <p class="text-2xl font-light italic leading-snug text-slate-700 dark:text-slate-200 tracking-tight">"We aspire to be a trusted partner for leading market research companies by delivering high-quality fieldwork execution built on accuracy, organization, and transparency."</p>
+                </div>
+                <div class="reveal p-10 bg-brand-navy text-white rounded-[30px]">
+                    <h3 class="text-3xl font-black text-brand-gold mb-6 italic uppercase">Our Mission</h3>
+                    <p class="text-lg opacity-80 leading-relaxed">To deliver reliable, high-quality fieldwork and recruitment services through structured execution, strong quality control, and a commitment to meeting client needs with accuracy and efficiency.</p>
+                </div>
+            </div>
+            <div class="reveal pt-10 border-t dark:border-slate-800">
+                <div class="flex flex-wrap justify-center gap-12 text-xs font-black uppercase tracking-[0.4em] text-brand-gold/70">
+                    <span>Reliability</span><span>Quality</span><span>Accuracy</span><span>Transparency</span><span>Flexibility</span><span>Client Focus</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="py-32 bg-white dark:bg-slate-950 border-t border-slate-100 dark:border-slate-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-black text-brand-navy dark:text-white mb-24 text-center uppercase tracking-tighter reveal">Our People</h2>
+            <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-8 reveal text-center">
+                <div class="member-card"><h4>Abdelaleem Abu Hishima</h4><p>Operations Manager</p></div>
+                <div class="member-card"><h4>Nour Aslan</h4><p>Project Manager</p></div>
+                <div class="member-card"><h4>Aya Hassan</h4><p>Operations Supervisor</p></div>
+                <div class="member-card"><h4>Fatima Yahya Moustafa</h4><p>MS Project Manager</p></div>
+                <div class="member-card"><h4>Shaimaa Abdulrahman</h4><p>Healthcare Researcher</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-slate-50 dark:bg-slate-900 overflow-hidden text-slate-900 dark:text-white border-y border-slate-100 dark:border-slate-800">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <div class="reveal mb-16">
+                <h2 class="text-5xl font-black mb-8 italic uppercase leading-none">Geographic Coverage</h2>
+                <p class="text-xl text-slate-600 dark:text-slate-400 mb-8 leading-relaxed max-w-3xl mx-auto">We provide fieldwork and recruitment services across Egypt, the GCC, and Turkey, including Saudi Arabia, Kuwait, and Qatar.</p>
+                <div class="grid grid-cols-1 gap-4 font-bold text-brand-blue dark:text-blue-400 uppercase text-xs tracking-widest pt-4">
+                    <p><i class="fas fa-check-circle mr-2"></i> Strong Local Presence</p>
+                    <p><i class="fas fa-check-circle mr-2"></i> Rapid Deployment Capability</p>
+                    <p><i class="fas fa-check-circle mr-2"></i> Robust Logistics Support</p>
+                </div>
+            </div>
+            <div class="max-w-3xl mx-auto space-y-6 text-lg italic text-slate-500 bg-white dark:bg-slate-800 p-8 rounded-2xl reveal shadow-sm border-r-4 border-brand-gold">
+                <p>"Proven experience in large car clinic studies in KSA and multiple CLT projects in Egypt."</p>
+                <p>"Successfully deliver projects of any scale, supported by a scalable and expert team across Egypt and the MENA region."</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-white pt-24 pb-12 dark:bg-slate-950 border-t-8 border-brand-navy">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-black text-brand-navy dark:text-white mb-16 italic uppercase reveal tracking-tighter">Let's Deliver Better Insights Together</h2>
+            <div class="grid md:grid-cols-3 gap-8 mb-20 reveal">
+                <div class="contact-card group">
+                    <i class="fas fa-envelope"></i>
+                    <p class="label">Email Us</p>
+                    <p class="info">insightsmasters61@gmail.com</p>
+                </div>
+                <div class="contact-card group">
+                    <i class="fas fa-phone-alt"></i>
+                    <p class="label">Egypt Office</p>
+                    <p class="info">+20 112 457 1585</p>
+                </div>
+                <div class="contact-card group">
+                    <i class="fas fa-phone-alt"></i>
+                    <p class="label">KSA Office</p>
+                    <p class="info">+966 554067852</p>
+                </div>
+            </div>
+            
+            <div class="flex justify-center space-x-6 mb-16 reveal">
+                <a href="https://www.facebook.com/profile.php?id=61583728537237&mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/company/insights-masters/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.me/966554067852" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:insightsmasters61@gmail.com" class="social-icon"><i class="far fa-envelope"></i></a>
+            </div>
+            
+            <p class="opacity-30 text-[9px] tracking-[0.5em] font-black uppercase text-slate-600 dark:text-slate-400">&copy; 2026 INSIGHTS MASTERS. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

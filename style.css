@@ -1,0 +1,301 @@
+/* 1. Base Styles & Typography */
+body { 
+    font-family: 'Poppins', sans-serif; 
+    transition: background-color 0.4s ease, color 0.4s ease;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 { 
+    font-family: 'Montserrat', sans-serif; 
+}
+
+/* 2. Navbar Fixes */
+#navbar {
+    transition: all 0.3s ease-in-out;
+}
+
+#navbar.scrolled {
+    padding: 12px 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 10px 30px rgba(11, 29, 58, 0.1);
+}
+
+/* Dark mode navbar fix */
+.dark #navbar.scrolled {
+    background-color: rgba(15, 23, 42, 0.95);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo visibility logic */
+#nav-logo-text { 
+    opacity: 0; 
+    transform: translateX(-10px);
+    transition: all 0.4s ease; 
+}
+
+#navbar.scrolled #nav-logo-text { 
+    opacity: 1; 
+    transform: translateX(0);
+}
+
+/* 3. Icon Boxes (Page 3) */
+.icon-box-enhanced {
+    text-align: center;
+    background: #ffffff;
+    padding: 25px 15px;
+    border-radius: 16px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid #f1f5f9;
+}
+
+.dark .icon-box-enhanced { 
+    background: #1e293b; 
+    border-color: #334155; 
+}
+
+.icon-box-enhanced:hover { 
+    transform: translateY(-10px); 
+    box-shadow: 0 20px 40px rgba(11, 29, 58, 0.1); 
+    border-color: #c5a059; 
+}
+
+.icon-box-enhanced i { 
+    font-size: 1.8rem; 
+    color: #1e3a8a; 
+    margin-bottom: 15px; 
+    transition: color 0.3s;
+}
+
+.icon-box-enhanced:hover i {
+    color: #c5a059;
+}
+
+.icon-box-enhanced p { 
+    font-size: 10px; 
+    font-weight: 800; 
+    text-transform: uppercase; 
+    color: #0b1d3a; 
+    letter-spacing: 0.5px;
+}
+
+.dark .icon-box-enhanced p { 
+    color: #f8fafc; 
+}
+
+/* 4. Service Pills */
+.service-pill-enhanced {
+    background: linear-gradient(90deg, #0b1d3a 0%, #1e3a8a 100%);
+    color: #ffffff !important;
+    padding: 18px 25px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 13px;
+    transition: all 0.3s ease;
+    border: 2px solid #c5a059;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-pill-enhanced:hover { 
+    transform: scale(1.05); 
+    box-shadow: 0 10px 25px rgba(197, 160, 89, 0.3); 
+    background: linear-gradient(90deg, #1e3a8a 0%, #0b1d3a 100%);
+}
+
+/* 5. Team Section */
+.member-card { 
+    text-align: center; 
+    padding: 25px;
+    border-radius: 12px;
+    transition: background 0.3s;
+}
+
+.member-card h4 { 
+    font-size: 14px; 
+    font-weight: 900; 
+    color: #0b1d3a; 
+    text-transform: uppercase; 
+    margin-bottom: 8px; 
+}
+
+.dark .member-card h4 { color: #ffffff; }
+
+.member-card p { 
+    font-size: 11px; 
+    font-weight: 700; 
+    color: #c5a059; 
+    text-transform: uppercase; 
+    letter-spacing: 1.5px; 
+}
+
+/* 6. Footer Contact Cards */
+.contact-card {
+    padding: 40px 20px; 
+    background: #ffffff; 
+    border-radius: 24px; 
+    transition: all 0.4s ease; 
+    border: 1px solid #e2e8f0; 
+    text-align: center;
+}
+
+.dark .contact-card { 
+    background: #0f172a; 
+    border-color: #1e293b; 
+}
+
+.contact-card:hover {
+    background: #0b1d3a;
+    border-color: #c5a059;
+    transform: translateY(-5px);
+}
+
+.contact-card i { 
+    font-size: 2.2rem; 
+    color: #c5a059; 
+    margin-bottom: 20px; 
+}
+
+.contact-card .label { 
+    font-size: 11px; 
+    font-weight: 800; 
+    text-transform: uppercase; 
+    tracking-widest; 
+    color: #64748b; 
+    margin-bottom: 8px; 
+}
+
+.contact-card .info { 
+    font-size: 17px; 
+    font-weight: 700; 
+    color: #0b1d3a; 
+    transition: color 0.3s;
+}
+
+.dark .contact-card .info { color: #f8fafc; }
+
+.contact-card:hover .info, 
+.contact-card:hover .label { 
+    color: #ffffff; 
+}
+
+/* 7. Social Icons */
+.social-icon {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    border: 1px solid #e2e8f0;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 1.1rem;
+    transition: all 0.3s ease; 
+    color: #0b1d3a;
+}
+
+.dark .social-icon { 
+    border-color: #334155; 
+    color: #94a3b8; 
+}
+
+.social-icon:hover { 
+    background: #c5a059; 
+    color: #ffffff; 
+    border-color: #c5a059;
+    transform: translateY(-5px);
+}
+
+/* 8. Animations */
+.reveal { 
+    opacity: 0; 
+    transform: translateY(40px); 
+    transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1); 
+}
+
+.reveal.active { 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+/* Break word utility */
+.break-words { 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    word-break: break-word;
+}
+
+/* =============================================
+   9. Responsive Design (Screen Sizes)
+   ============================================= */
+
+/* --- شاشات التابلت والأجهزة المتوسطة (Max 1024px) --- */
+@media (max-width: 1024px) {
+    h2 { font-size: 2.5rem !important; } /* تصغير العناوين الكبيرة قليلاً */
+    
+    .icon-box-enhanced i { font-size: 1.5rem; }
+    .icon-box-enhanced p { font-size: 8px; }
+}
+
+/* --- شاشات الموبايل الكبيرة والتابلت الصغير (Max 768px) --- */
+@media (max-width: 768px) {
+    #navbar { padding: 10px 0; }
+    
+    #page1 img { max-width: 80%; } /* تصغير العدسة (اللوجو) عشان متخدش الشاشة كلها */
+    
+    h2 { font-size: 2rem !important; line-height: 1.2; }
+    h3 { font-size: 1.5rem !important; }
+
+    .service-pill-enhanced {
+        font-size: 11px;
+        padding: 15px 10px;
+    }
+
+    .contact-card {
+        padding: 30px 15px;
+    }
+
+    .contact-card i { font-size: 1.8rem; }
+    .contact-card .info { font-size: 15px; }
+
+    /* جعل كبسولات الفريق تظهر بشكل أفضل */
+    .team-card {
+        padding: 10px 15px;
+        font-size: 11px;
+    }
+}
+
+/* --- شاشات الموبايل الصغيرة جداً (Max 480px) --- */
+@media (max-width: 480px) {
+    h2 { font-size: 1.75rem !important; }
+    
+    #page1 { padding-top: 100px; }
+    #page1 img { max-width: 90%; } /* ضبط حجم العدسة للموبايل */
+
+    /* تعديل المسافات بين الأقسام */
+    section { padding-top: 60px !important; padding-bottom: 60px !important; }
+
+    /* التأكد من أن الأيقونات والخدمات لا تخرج عن حدود الشاشة */
+    .icon-box-enhanced {
+        padding: 15px 5px;
+    }
+
+    .contact-card {
+        border-radius: 15px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+}
+
+/* --- تحسينات عامة للـ Touch Devices --- */
+@media (hover: none) {
+    .icon-box-enhanced:hover, 
+    .contact-card:hover, 
+    .service-pill-enhanced:hover {
+        transform: none !important; /* إلغاء الـ Hover animation في الموبايل عشان ميبقاش مزعج */
+    }
+}
